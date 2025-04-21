@@ -47,10 +47,10 @@ const Home = () => {
 // Home Banner section
 const HomeBanner = () => {
   return (
-    <section className="homebanner py-52 px-[350px] text-white flex justify-center  items-center">
+    <section className="homebanner px-8 py-52 lg:px-[350px] text-white flex justify-center  items-center">
       <div data-aos="fade-up">
         <div className="text-center">
-          <h1 className="capitalize font-bold text-5xl leading-[50px]">
+          <h1 className="capitalize font-bold text-2xl sm:text-3xl md:text-5xl leading-[50px]">
             Helping you to make yourself an expert driver
           </h1>
           <p className="py-4 text-balance">
@@ -75,7 +75,7 @@ const SubBanner = () => {
   return (
     <section className="max-w-[1200px] mx-auto mb-8 bg-white p-4 rounded-lg relative top-[-50px]">
       {/* <h1></h1> */}
-      <div className="sub_grid grid grid-cols-4 items-center">
+      <div className="sub_grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-center">
         <div
           className="grid_one p-4 flex justify-center text-center hover:bg-blue-900 hover:text-white cursor-pointer"
           data-aos="fade-up"
@@ -193,8 +193,8 @@ const SubBanner = () => {
 // second section
 const Experience = () => {
   return (
-    <section className="max-w-[1200px] mx-auto my-8">
-      <div className="grid grid-cols-2 gap-10 items-center">
+    <section className="max-w-[80%] mx-auto mb-64 md:my-8">
+      <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-center">
         <div className="experience_img relative" data-aos="fade-right">
           <img src={Image2} alt="" className="" />
           <div className="w-96 absolute top-[60%] left-[-40px] border-8 border-white">
@@ -262,20 +262,20 @@ const Services = () => {
 
   return (
     <section className="sub_contents py-2 my-24 text-white">
-      <div className="max-w-[1200px] mx-auto my-24">
+      <div className="max-w-[80%] mx-auto my-24">
         <h1 className="flex items-center justify-center text-2xl font-medium tracking-widest">
           Our Services
         </h1>
         <div className="services">
           <div className="services_header">
-            <div className="services_title grid grid-cols-2 items-center gap-84 mt-12">
+            <div className="services_title grid grid-cols-1 md:grid-cols-2 items-center gap-84 mt-12">
               <h1 className="text-3xl font-semibold tracking-wider capitalize text-balance text-center border-t-4 border-white py-6">
                 <p className="flex justify-center">
                   <FaRedRiver />
                 </p>
                 FullKit Educational Driving Course and Services
               </h1>
-              <p className="font-normal leading-7 text-balance text-center">
+              <p className="font-normal leading-7 text-balance text-center my-8">
                 Our driving course helps our clients of all ages to acquire
                 licensed the experience required to be pro at driving and
                 navigating through. Below are vaious services that we offer at
@@ -283,7 +283,7 @@ const Services = () => {
               </p>
             </div>
             <div className="services_contents my-4 flex items-center justify-between">
-              <div className="service_contents flex  gap-8 items-center text-white">
+              <div className="service_contents flex flex-col md:flex-row gap-8 items-center text-white">
                 <p className="">Fullkit Lessons for teenagers</p>
                 <p className="border-x border-white border-opacity-25 px-6">
                   Fullkit Lessons for Adults
@@ -300,7 +300,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="services_grid grid grid-cols-3 gap-8 items-center">
+          <div className="services_grid grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
             {ServicesInfo.map((items) => (
               <div className="bg-white py-8 px-2" key={items.id}>
                 <div>
@@ -325,9 +325,9 @@ const Services = () => {
 // fourth section
 const SubFooter = () => {
   return (
-    <section className="max-w-[1200px] mx-auto my-16">
-      <div className="sub_content2 py-24 px-36 rounded-xl text-white text-center">
-        <h1 className="font-bold text-[39px] capitalize leading-[50px] text-balance">
+    <section className="max-w-[80%] mx-auto my-16">
+      <div className="sub_content2 px-12 py-12 md:py-24 md:px-36 rounded-xl text-white text-center">
+        <h1 className="font-bold text-xl md:text-[39px] capitalize md:leading-[50px] text-balance">
           Fullkit helps our clients and students to pass the test, earn a
           license on the first try.
         </h1>
@@ -342,9 +342,9 @@ const SubFooter = () => {
 
 const OurProcess = () => {
   return (
-    <section className="max-w-[1200px] mx-auto">
-      <div className="grid grid-cols-2 gap-24 items-center my-8">
-        <div className="imgg">
+    <section className="max-w-[90%] md:max-w-[80%] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center my-8">
+        <div className="imgg hidden md:grid">
           <img src={Icon} alt="" />
         </div>
         <div className="img_content flex flex-col justify-center items-center">
@@ -367,7 +367,7 @@ const OurProcess = () => {
           </div>
         </div>
       </div>
-      <div className="grid_process grid grid-cols-3 items-center gap-12 mt-16">
+      <div className="grid_process grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-12 mt-16">
         <div className="contents-1 text-left bg-white border-t-4 border-blue-950 p-4">
           <div className="text-5xl text-blue-950">
             <MdOutlineSafetyCheck />
@@ -429,9 +429,9 @@ const Booking = () => {
   ];
 
   return (
-    <section className="sub_contents text-white">
-      <div className="max-w-[1200px] mx-auto py-24">
-        <div className="bookings grid grid-cols-2 items-center gap-12">
+    <section className="sub_contents text-white mb-8">
+      <div className="max-w-[90%] md:max-w-[80%] mx-auto py-24">
+        <div className="bookings grid md:grid-cols-2 items-center gap-12">
           <div className="bookings_text">
             <h1 className="text-3xl font-semibold capitalize mb-2">
               Get appointment with our qualified driving instructors
