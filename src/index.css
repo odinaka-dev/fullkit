@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* universal css styles, root styles and background styles. */
+:root {
+  --font-family: "Poppins", sans-serif;
+}
+
+* {
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-family);
+}
+
+/* homepage background styles */
+.homebanner {
+  background: rgb(0, 0, 0, 0.3) url(./assets/Img/heropage.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+/* sub footer */
+.sub_contents {
+  background: rgba(25, 0, 255, 0.63) url(./assets/Img/servicesbg.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+.sub_content2 {
+  background: rgba(0, 67, 168, 0.3) url(./assets/Img/heropage.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+/* Footer background styles */
