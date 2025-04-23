@@ -50,7 +50,7 @@ const HomeBanner = () => {
     <section className="homebanner px-8 py-52 lg:px-[350px] text-white flex justify-center  items-center">
       <div data-aos="fade-up">
         <div className="text-center">
-          <h1 className="capitalize font-bold text-2xl sm:text-3xl md:text-5xl leading-[50px]">
+          <h1 className="capitalize font-bold text-3xl sm:text-3xl md:text-5xl leading-[40px] sm:leading-[50px]">
             Helping you to make yourself an expert driver
           </h1>
           <p className="py-4 text-balance">
@@ -269,21 +269,20 @@ const Services = () => {
         <div className="services">
           <div className="services_header">
             <div className="services_title grid grid-cols-1 md:grid-cols-2 items-center gap-84 mt-12">
-              <h1 className="text-3xl font-semibold tracking-wider capitalize text-balance text-center border-t-4 border-white py-6">
+              <h1 className="text-2xl md:text-3xl font-semibold tracking-wider capitalize text-balance text-center border-t-4 border-white py-6">
                 <p className="flex justify-center">
                   <FaRedRiver />
                 </p>
                 FullKit Educational Driving Course and Services
               </h1>
-              <p className="font-normal leading-7 text-balance text-center my-8">
+              <p className="font-normal leading-7 text-balance text-center my-3 md:my-8">
                 Our driving course helps our clients of all ages to acquire
                 licensed the experience required to be pro at driving and
-                navigating through. Below are vaious services that we offer at
-                fullkit driving school, check them out:
+                navigating through:
               </p>
             </div>
             <div className="services_contents my-4 flex items-center justify-between">
-              <div className="service_contents flex flex-col md:flex-row gap-8 items-center text-white">
+              <div className="service_contents hidden md:flex md:flex-row gap-8 items-center text-white">
                 <p className="">Fullkit Lessons for teenagers</p>
                 <p className="border-x border-white border-opacity-25 px-6">
                   Fullkit Lessons for Adults

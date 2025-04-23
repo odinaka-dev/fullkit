@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <nav>
       <div className="bg-blue-900 text-white py-4 px-8 flex justify-between items-center cursor-pointer">
-        <div className="flex items-center gap-12 font-light">
+        <div className="hidden md:flex items-center gap-12 font-light">
           <div className="flex items-center gap-2">
             <BiPhone />
             <p>(+234)-90-788-0987</p>
