@@ -14,12 +14,12 @@
   list-style-type: none;
   outline: none;
   box-sizing: border-box;
-  max-width: 100%;
   margin: 0;
   padding: 0;
 }
 body {
   font-family: var(--font-family);
+  /* max-width: 100vw; */
 }
 
 /* homepage background styles */
