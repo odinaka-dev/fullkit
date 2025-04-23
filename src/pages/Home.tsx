@@ -36,7 +36,7 @@ const Home = () => {
       <Experience />
       <Services />
       <SubFooter />
-      <div className="bg-zinc-100 py-16 mb-8">
+      <div className="bg-zinc-100 py-16">
         <OurProcess />
       </div>
       <Booking />
@@ -343,8 +343,8 @@ const SubFooter = () => {
 const OurProcess = () => {
   return (
     <section className="max-w-[90%] md:max-w-[80%] mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center my-8">
-        <div className="imgg hidden md:grid">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-24 items-center mt-8 md:mx-24">
+        <div className="hidden">
           <img src={Icon} alt="" />
         </div>
         <div className="img_content flex flex-col justify-center items-center">
@@ -353,16 +353,12 @@ const OurProcess = () => {
           </h1>
           <p className="border-b-[3px] border-b-blue-950 w-[20%]"></p>
           <div className="process_contents">
-            <h1 className="capitalize text-4xl font-bold text-blue-950 text-center leading-[50px] my-4">
+            <h1 className="capitalize text-3xl sm:text-4xl font-bold text-blue-950 text-center leading-[50px] my-4">
               Modern technologies for much easier driving.
             </h1>
             <p className="text-gray-500 leading-7 text-center">
               Modern technologies have significantly transformed the way we
               drive, making the experience smoother, safer, and more convenient.
-              From advanced driver-assistance systems like adaptive cruis7
-              control and lane-keeping assist to smart GPS navigation and
-              voice-controlled infotainment, today’s vehicles are designed to
-              reduce stress on the road
             </p>
           </div>
         </div>
@@ -470,7 +466,7 @@ const Booking = () => {
               </p>
             </div>
             <form action="" className="my-8">
-              <div className="details grid grid-cols-2 items-center gap-4 text-blue-950">
+              <div className="details grid sm:grid-cols-2 items-center gap-4 text-blue-950">
                 <div className="">
                   <input
                     type="text"
@@ -486,7 +482,7 @@ const Booking = () => {
                   />
                 </div>
               </div>
-              <div className="details grid grid-cols-2 items-center gap-4 text-blue-950 mt-6">
+              <div className="details grid sm:grid-cols-2 items-center gap-4 text-blue-950 mt-6">
                 <div className="">
                   <input
                     type="email"
