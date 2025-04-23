@@ -193,11 +193,11 @@ const SubBanner = () => {
 // second section
 const Experience = () => {
   return (
-    <section className="max-w-[80%] mx-auto mb-64 md:my-8">
+    <section className="max-w-[80%] mx-auto mb-32 md:mb-64 md:my-8">
       <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-center">
         <div className="experience_img relative" data-aos="fade-right">
           <img src={Image2} alt="" className="" />
-          <div className="w-96 absolute top-[60%] left-[-40px] border-8 border-white">
+          <div className="w-64 md:w-96 absolute top-[60%] left-[-40px] border-8 border-white">
             <img src={Image} alt="" className="rounded-md" />
           </div>
         </div>
