@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 // react icons
 import { FaRedRiver } from "react-icons/fa";
@@ -76,7 +76,7 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
+      {/* {isOpen && (
         <motion.ul
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -93,11 +93,16 @@ const Header = () => {
           <Link to="/services" onClick={() => setIsOpen(false)}>
             <li className="hover:text-blue-900 duration-300">Services</li>
           </Link>
+          <Link to="/services" onClick={() => setIsOpen(false)}>
+            <li className="hover:text-blue-900 duration-300">Contact us</li>
+          </Link>
           <Link to="/contact" onClick={() => setIsOpen(false)}>
-            <li className="hover:text-blue-900 duration-300">Contact Us</li>
+            <li className="hover:bg-blue-950 hover:text-white hover:px-4 rounded-sm cursor-pointer duration-300">
+              Get Enrolled
+            </li>
           </Link>
         </motion.ul>
-      )}
+      )} */}
     </nav>
   );
 };

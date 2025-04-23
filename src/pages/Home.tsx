@@ -20,6 +20,8 @@ import Image from "../assets/Img/experience.avif";
 import Image2 from "../assets/Img/exp.avif";
 import Icon from "../assets/Icons/drive.avif";
 import { IoCheckmarkSharp } from "react-icons/io5";
+import { CgMail } from "react-icons/cg";
+import { CiLocationArrow1 } from "react-icons/ci";
 
 const Home = () => {
   useEffect(() => {
@@ -40,6 +42,7 @@ const Home = () => {
         <OurProcess />
       </div>
       <Booking />
+      <ContactUs />
     </section>
   );
 };
@@ -505,7 +508,6 @@ const Booking = () => {
                 >
                   <option value="">Choose Course</option>
                   <option value="">Basic Course</option>
-                  <option value="">Medium Course</option>
                   <option value="">Premium Course</option>
                 </select>
               </div>
@@ -525,6 +527,49 @@ const Booking = () => {
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// more information
+const ContactUs = () => {
+  return (
+    <section className="max-w-[80%] mx-auto my-8">
+      <div className="contact_information text-center px-8 sm:px-24 md:px-32">
+        <h1 className="text-lg font-semibold tracking-wider text-gray-600">
+          contact us today.
+        </h1>
+        <h1 className="text-4xl font-bold text-blue-950 capitalize leading-[50px] my-8">
+          For more information concerning our services contact us today or get
+          enrolled
+        </h1>
+        <div className="grid grid-cols-3 gap-8 items-center">
+          <div className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8">
+            <div className="button_contents flex gap-2 items-center">
+              <p className="text-white bg-blue-950 p-4 rounded-full">
+                <BiPhone />
+              </p>
+              <p>(+234)-9087665467</p>
+            </div>
+          </div>
+          <div className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8">
+            <div className="button_contents flex gap-2 items-center">
+              <p className="text-white bg-blue-950 p-4 rounded-full">
+                <CgMail />
+              </p>
+              <p>fullkit@gmail.com</p>
+            </div>
+          </div>
+          <div className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8">
+            <div className="button_contents flex gap-2 items-center">
+              <p className="text-white bg-blue-950 p-4 rounded-full">
+                <CiLocationArrow1 />
+              </p>
+              <p>Ogudu road, ojota, Lagos.</p>
+            </div>
           </div>
         </div>
       </div>
