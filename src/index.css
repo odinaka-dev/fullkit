@@ -14,7 +14,7 @@
   list-style-type: none;
   outline: none;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
