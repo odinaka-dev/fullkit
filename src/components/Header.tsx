@@ -28,7 +28,7 @@ const Header = () => {
             <p>www.fullkit.com.ng</p>
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 text-sm md:text-[16px]">
           <div className="flex items-center gap-2 border-r border-r-white pr-4 border-opacity-30">
             <BsClock />
             <p>Mon-Sat</p>
