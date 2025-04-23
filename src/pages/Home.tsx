@@ -328,7 +328,10 @@ const Services = () => {
 const SubFooter = () => {
   return (
     <section className="max-w-[80%] mx-auto my-16">
-      <div className="sub_content2 px-12 py-12 md:py-24 md:px-36 rounded-xl text-white text-center">
+      <div
+        className="sub_content2 px-12 py-12 md:py-24 md:px-36 rounded-xl text-white text-center"
+        data-aos="fade-in"
+      >
         <h1 className="font-bold text-xl md:text-[39px] capitalize md:leading-[50px] text-balance">
           Fullkit helps our clients and students to pass the test, earn a
           license on the first try.
@@ -350,15 +353,24 @@ const OurProcess = () => {
           <img src={Icon} alt="" />
         </div>
         <div className="img_content flex flex-col justify-center items-center">
-          <h1 className="text-gray-700 capitalize font-semibold text-xl pb-2">
+          <h1
+            className="text-gray-700 capitalize font-semibold text-xl pb-2"
+            data-aos="fade-up"
+          >
             Our Process
           </h1>
           <p className="border-b-[3px] border-b-blue-950 w-[20%]"></p>
           <div className="process_contents">
-            <h1 className="capitalize text-3xl sm:text-4xl font-bold text-blue-950 text-center leading-[50px] my-4">
+            <h1
+              className="capitalize text-3xl sm:text-4xl font-bold text-blue-950 text-center leading-[50px] my-4"
+              data-aos="fade-up"
+            >
               Modern technologies for much easier driving.
             </h1>
-            <p className="text-gray-500 leading-7 text-center">
+            <p
+              className="text-gray-500 leading-7 text-center"
+              data-aos="fade-up"
+            >
               Modern technologies have significantly transformed the way we
               drive, making the experience smoother, safer, and more convenient.
             </p>
@@ -366,7 +378,10 @@ const OurProcess = () => {
         </div>
       </div>
       <div className="grid_process grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center gap-12 mt-16">
-        <div className="contents-1 text-left bg-white border-t-4 border-blue-950 p-4">
+        <div
+          className="contents-1 text-left bg-white border-t-4 border-blue-950 p-4"
+          data-aos="fade-up"
+        >
           <div className="text-5xl text-blue-950">
             <MdOutlineSafetyCheck />
           </div>
@@ -378,7 +393,10 @@ const OurProcess = () => {
             and experience the very best learning experience.
           </p>
         </div>
-        <div className="contents-1 text-left bg-white border-t-4 border-blue-950 p-4">
+        <div
+          className="contents-1 text-left bg-white border-t-4 border-blue-950 p-4"
+          data-aos="fade-up"
+        >
           <div className="text-5xl text-blue-950">
             <MdDriveEta />
           </div>
@@ -390,7 +408,10 @@ const OurProcess = () => {
             and experience the very best learning experience.
           </p>
         </div>
-        <div className="contents-1 text-left bg-white border-t-4 border-blue-950 p-4">
+        <div
+          className="contents-1 text-left bg-white border-t-4 border-blue-950 p-4"
+          data-aos="fade-up"
+        >
           <div className="text-5xl text-blue-950">
             <PiCertificateFill />
           </div>
@@ -431,17 +452,20 @@ const Booking = () => {
       <div className="max-w-[90%] md:max-w-[80%] mx-auto py-24">
         <div className="bookings grid md:grid-cols-2 items-center gap-12">
           <div className="bookings_text">
-            <h1 className="text-3xl font-semibold capitalize mb-2">
+            <h1
+              className="text-3xl font-semibold capitalize mb-2"
+              data-aos="fade-right"
+            >
               Get appointment with our qualified driving instructors
             </h1>
-            <p className="leading-7">
+            <p className="leading-7" data-aos="fade-right">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
               distinctio corporis magnam ullam! Nulla, a praesentium sapiente
               mollitia, animi facilis vero quaerat veniam labore sed repellat
               repellendus exercitationem doloribus debitis tempora fugit odio
               earum nobis beatae!
             </p>
-            <div className="sub_texts">
+            <div className="sub_texts" data-aos="fade-right">
               {Appointments.map((items) => (
                 <div key={items.id} className="flex gap-2 items-center">
                   <p className="text-green-400 font-bold text-xl my-4">
@@ -454,7 +478,7 @@ const Booking = () => {
           </div>
           <div
             className="bookings_form bg-white p-6 py-8 pt-12"
-            data-aos="slide-up"
+            data-aos="fade-up"
           >
             <div className="text-center">
               <h1 className="text-2xl text-blue-950 font-bold capitalize">
@@ -537,17 +561,26 @@ const Booking = () => {
 // more information
 const ContactUs = () => {
   return (
-    <section className="max-w-[80%] mx-auto my-8">
+    <section className="max-w-[96%] sm:max-w-[80%] mx-auto my-8">
       <div className="contact_information text-center px-8 sm:px-24 md:px-32">
-        <h1 className="text-lg font-semibold tracking-wider text-gray-600">
+        <h1
+          className="text-lg font-semibold tracking-wider text-gray-600"
+          data-aos="fade-down"
+        >
           contact us today.
         </h1>
-        <h1 className="text-4xl font-bold text-blue-950 capitalize leading-[50px] my-8">
+        <h1
+          className="text-2xl sm:text-4xl font-bold text-blue-950 capitalize sm:leading-[50px] my-8"
+          data-aos="fade-left"
+        >
           For more information concerning our services contact us today or get
           enrolled
         </h1>
-        <div className="grid grid-cols-3 gap-8 items-center">
-          <div className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 sm:gap-8 items-center">
+          <div
+            className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8"
+            data-aos="fade-down"
+          >
             <div className="button_contents flex gap-2 items-center">
               <p className="text-white bg-blue-950 p-4 rounded-full">
                 <BiPhone />
@@ -555,7 +588,10 @@ const ContactUs = () => {
               <p>(+234)-9087665467</p>
             </div>
           </div>
-          <div className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8">
+          <div
+            className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8"
+            data-aos="fade-down"
+          >
             <div className="button_contents flex gap-2 items-center">
               <p className="text-white bg-blue-950 p-4 rounded-full">
                 <CgMail />
@@ -563,7 +599,10 @@ const ContactUs = () => {
               <p>fullkit@gmail.com</p>
             </div>
           </div>
-          <div className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8">
+          <div
+            className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8"
+            data-aos="fade-down"
+          >
             <div className="button_contents flex gap-2 items-center">
               <p className="text-white bg-blue-950 p-4 rounded-full">
                 <CiLocationArrow1 />
