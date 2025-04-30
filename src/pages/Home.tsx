@@ -582,7 +582,7 @@ const Booking = () => {
 // more information
 const ContactUs = () => {
   return (
-    <section className="max-w-[96%] sm:max-w-[80%] mx-auto my-8">
+    <section className="max-w-[100%] sm:max-w-[80%] mx-auto my-8">
       <div className="contact_information text-center px-8 sm:px-24 md:px-32">
         <h1
           className="text-lg font-semibold tracking-wider text-gray-600"
@@ -597,30 +597,32 @@ const ContactUs = () => {
           For more information concerning our services contact us today or get
           enrolled
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 sm:gap-8 items-center">
-          <div
-            className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8"
-            data-aos="fade-up"
-          >
-            <div className="button_contents flex gap-2 items-center">
-              <p className="text-white bg-blue-950 p-4 rounded-full">
-                <BiPhone />
-              </p>
-              <p>(+234)-08021056648</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 sm:gap-8 items-center">
+          <div>
+            <div
+              className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8"
+              data-aos="fade-up"
+            >
+              <div className="button_contents flex gap-2 items-center">
+                <p className="text-white bg-blue-950 p-4 rounded-full">
+                  <BiPhone />
+                </p>
+                <p>(+234)-08021056648</p>
+              </div>
+            </div>
+            <div
+              className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8"
+              data-aos="fade-up"
+            >
+              <div className="button_contents flex gap-2 items-center">
+                <p className="text-white bg-blue-950 p-4 rounded-full">
+                  <CgMail />
+                </p>
+                <p>fullkitds@gmail.com</p>
+              </div>
             </div>
           </div>
-          <div
-            className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8"
-            data-aos="fade-up"
-          >
-            <div className="button_contents flex gap-2 items-center">
-              <p className="text-white bg-blue-950 p-4 rounded-full">
-                <CgMail />
-              </p>
-              <p>fullkitds@gmail.com</p>
-            </div>
-          </div>
-          <div
+          {/* <div
             className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8"
             data-aos="fade-up"
           >
@@ -630,6 +632,16 @@ const ContactUs = () => {
               </p>
               <p>Suite 24, Olivia Plaza 58, Ogudu road, Lagos.</p>
             </div>
+          </div> */}
+          <div className="w-full aspect-video">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3963.48849135108!2d3.3811459736503213!3d6.586037722436229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSuite%2024%2C%20Olivia%20Plaza%2058%2C%20Ogudu%20road%2C%20Lagos.!5e0!3m2!1sen!2sng!4v1746021417601!5m2!1sen!2sng"
+              className="w-[100%] md:w-[600px] h-[450px]"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
