@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 // react libraries
-import AOS from "aos";
+// import AOS from "aos";
 import "aos/dist/aos.css";
 
 // react-icons
