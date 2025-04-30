@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 // react libraries
-// import AOS from "aos";
+import AOS from "aos";
 import "aos/dist/aos.css";
 
 // react-icons
@@ -30,12 +30,12 @@ import ServiceImageThree from "../assets/Image/car1.jpg";
 import Training from "../assets/Image/training-theory-class.jpg";
 
 const Home = () => {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //     once: true,
-  //   });
-  // }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   const location = useLocation();
 
@@ -219,13 +219,13 @@ const Experience = () => {
   return (
     <section className="max-w-[80%] mx-auto mb-32 md:mb-24 md:my-8">
       <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-center">
-        <div className="experience_img relative" data-aos="fade-right">
+        <div className="experience_img relative" data-aos="fade-up">
           <img src={OfficeImage} alt="" className="" />
           <div className="w-64 md:w-96 absolute top-[50%] left-[-40px] border-8 border-white">
             <img src={Training} alt="" className="rounded-md" />
           </div>
         </div>
-        <div className="experience_text" data-aos="fade-left">
+        <div className="experience_text" data-aos="fade-up">
           <div className="subheader">
             <h1 className="text-lg font-medium text-gray-400 my-4">About Us</h1>
           </div>
@@ -351,7 +351,7 @@ const SubFooter = () => {
     <section className="max-w-[80%] mx-auto my-16">
       <div
         className="sub_content2 px-12 py-12 md:py-24 md:px-36 rounded-xl text-white text-center"
-        data-aos="fade-in"
+        data-aos="fade-up"
       >
         <h1 className="font-bold text-xl md:text-[39px] capitalize md:leading-[50px] text-balance">
           Fullkit helps our clients and students to pass the test, earn a
@@ -475,18 +475,18 @@ const Booking = () => {
           <div className="bookings_text">
             <h1
               className="text-3xl font-semibold capitalize mb-2"
-              data-aos="fade-right"
+              data-aos="fade-up"
             >
               Get appointment with our qualified driving instructors
             </h1>
-            <p className="leading-7" data-aos="fade-right">
+            <p className="leading-7" data-aos="fade-up">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam
               distinctio corporis magnam ullam! Nulla, a praesentium sapiente
               mollitia, animi facilis vero quaerat veniam labore sed repellat
               repellendus exercitationem doloribus debitis tempora fugit odio
               earum nobis beatae!
             </p>
-            <div className="sub_texts" data-aos="fade-right">
+            <div className="sub_texts" data-aos="fade-up">
               {Appointments.map((items) => (
                 <div key={items.id} className="flex gap-2 items-center">
                   <p className="text-green-400 font-bold text-xl my-4">
@@ -586,13 +586,13 @@ const ContactUs = () => {
       <div className="contact_information text-center px-8 sm:px-24 md:px-32">
         <h1
           className="text-lg font-semibold tracking-wider text-gray-600"
-          data-aos="fade-down"
+          data-aos="fade-up"
         >
           contact us today.
         </h1>
         <h1
           className="text-2xl sm:text-4xl font-bold text-blue-950 capitalize sm:leading-[50px] my-8"
-          data-aos="fade-left"
+          data-aos="fade-up"
         >
           For more information concerning our services contact us today or get
           enrolled
@@ -600,7 +600,7 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 sm:gap-8 items-center">
           <div
             className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8"
-            data-aos="fade-down"
+            data-aos="fade-up"
           >
             <div className="button_contents flex gap-2 items-center">
               <p className="text-white bg-blue-950 p-4 rounded-full">
@@ -611,7 +611,7 @@ const ContactUs = () => {
           </div>
           <div
             className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8"
-            data-aos="fade-down"
+            data-aos="fade-up"
           >
             <div className="button_contents flex gap-2 items-center">
               <p className="text-white bg-blue-950 p-4 rounded-full">
@@ -622,7 +622,7 @@ const ContactUs = () => {
           </div>
           <div
             className="text-blue-950 border border-blue-950 p-[3px] rounded-full inline-block pr-8 mt-8"
-            data-aos="fade-down"
+            data-aos="fade-up"
           >
             <div className="button_contents flex gap-2 items-center">
               <p className="text-white bg-blue-950 p-4 rounded-full">
