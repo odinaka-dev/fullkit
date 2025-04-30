@@ -238,7 +238,7 @@ const Experience = () => {
           <div className="contents">
             <p className="text-[14px] md:text-[16px] text-balance text-gray-600 py-4 leading-6 md:leading-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              debitis cum accusantium quibusdam atque tenetur, dolorum voluptate
+              debitis cum accusantiu quibusdam atque tenetur, dolorum voluptate
               corporis consequatur animi veritatis velit, aspernatur quos vel
               quaerat ipsa neque alias! Quisquam?
             </p>
