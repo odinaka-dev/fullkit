@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router";
-// import { motion } from "framer-motion";
+import Logo from "../assets/Image/logo-large.png";
+import { motion } from "framer-motion";
 
+import { Link } from "react-router";
 // react icons
-import { FaRedRiver } from "react-icons/fa";
 import { BiPhone, BiWorld, BiMenuAltRight, BiX } from "react-icons/bi";
 import { BsClock, BsMailbox } from "react-icons/bs";
 
@@ -41,11 +41,10 @@ const Header = () => {
       </div>
 
       {/* Main navigation */}
-      <div className="flex justify-between items-center py-8 px-8 border-b shadow-md">
+      <div className="flex justify-between items-center px-8 border-b shadow-md">
         <Link to={"/"}>
-          <div className="flex gap-2 items-center">
-            <FaRedRiver className="text-3xl text-blue-900" />
-            <p className="font-bold text-xl space-x-2 capitalize">FullKit</p>
+          <div className="">
+            <img src={Logo} alt="" width={120} height={200} />
           </div>
         </Link>
 
@@ -76,7 +75,7 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu */}
-      {/* {isOpen && (
+      {isOpen && (
         <motion.ul
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -102,7 +101,7 @@ const Header = () => {
             </li>
           </Link>
         </motion.ul>
-      )} */}
+      )}
     </nav>
   );
 };

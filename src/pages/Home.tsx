@@ -16,12 +16,17 @@ import { PiCertificateFill, PiRoadHorizonFill } from "react-icons/pi";
 import { MdDriveEta, MdOutlineSafetyCheck } from "react-icons/md";
 
 // image imports
-import Image from "../assets/Img/experience.avif";
-import Image2 from "../assets/Img/exp.avif";
 import Icon from "../assets/Icons/drive.avif";
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { CgMail } from "react-icons/cg";
 import { CiLocationArrow1 } from "react-icons/ci";
+
+// images imports
+import OfficeImage from "../assets/Image/office.png";
+import ServiceImageOne from "../assets/Image/car1.jpg";
+import ServiceImageTwo from "../assets/Image/car2.jpg";
+import ServiceImageThree from "../assets/Image/car1.jpg";
+import Training from "../assets/Image/training-theory-class.jpg";
 
 const Home = () => {
   useEffect(() => {
@@ -196,12 +201,12 @@ const SubBanner = () => {
 // second section
 const Experience = () => {
   return (
-    <section className="max-w-[80%] mx-auto mb-32 md:mb-64 md:my-8">
+    <section className="max-w-[80%] mx-auto mb-32 md:mb-24 md:my-8">
       <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-10 items-center">
         <div className="experience_img relative" data-aos="fade-right">
-          <img src={Image2} alt="" className="" />
-          <div className="w-64 md:w-96 absolute top-[60%] left-[-40px] border-8 border-white">
-            <img src={Image} alt="" className="rounded-md" />
+          <img src={OfficeImage} alt="" className="" />
+          <div className="w-64 md:w-96 absolute top-[50%] left-[-40px] border-8 border-white">
+            <img src={Training} alt="" className="rounded-md" />
           </div>
         </div>
         <div className="experience_text" data-aos="fade-left">
@@ -227,7 +232,7 @@ const Experience = () => {
               <p className="text-white bg-blue-950 p-4 rounded-full">
                 <BiPhone />
               </p>
-              <p>(+234)-9087665467</p>
+              <p>(+234)-0806 840 5168</p>
             </div>
           </div>
         </div>
@@ -242,21 +247,21 @@ const Services = () => {
   const ServicesInfo = [
     {
       id: 1,
-      image: Image,
+      image: ServiceImageOne,
       title: "Fullkit lessons for Teenagers",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi debitis cum accusantium quibusdam atque tenetur, dolorum voluptate corporis consequatur animi veritatis?",
     },
     {
       id: 2,
-      image: Image,
+      image: ServiceImageTwo,
       title: "Fullkit lessons for Adults",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi debitis cum accusantium quibusdam atque tenetur, dolorum voluptate corporis consequatur animi veritatis?",
     },
     {
       id: 3,
-      image: Image,
+      image: ServiceImageThree,
       title: "Fullkit lessons for Seniors",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi debitis cum accusantium quibusdam atque tenetur, dolorum voluptate corporis consequatur animi veritatis?",
@@ -585,7 +590,7 @@ const ContactUs = () => {
               <p className="text-white bg-blue-950 p-4 rounded-full">
                 <BiPhone />
               </p>
-              <p>(+234)-9087665467</p>
+              <p>(+234)-08021056648</p>
             </div>
           </div>
           <div
@@ -596,7 +601,7 @@ const ContactUs = () => {
               <p className="text-white bg-blue-950 p-4 rounded-full">
                 <CgMail />
               </p>
-              <p>fullkit@gmail.com</p>
+              <p>fullkitds@gmail.com</p>
             </div>
           </div>
           <div
@@ -607,7 +612,7 @@ const ContactUs = () => {
               <p className="text-white bg-blue-950 p-4 rounded-full">
                 <CiLocationArrow1 />
               </p>
-              <p>Ogudu road, ojota, Lagos.</p>
+              <p>Suite 24, Olivia Plaza 58, Ogudu road, Lagos.</p>
             </div>
           </div>
         </div>

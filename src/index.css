@@ -40,7 +40,8 @@ body {
   background-blend-mode: darken;
 }
 .sub_content2 {
-  background: rgba(0, 67, 168, 0.3) url(./assets/Img/heropage.jpg);
+  background: rgba(1, 28, 70, 0.671)
+    url(./assets/Image/training-theory-class.jpg);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
