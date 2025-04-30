@@ -53,13 +53,16 @@ const Header = () => {
           <Link to="/" className="hover:text-blue-900 duration-300">
             <li>Home</li>
           </Link>
-          <Link to="/about" className="hover:text-blue-900 duration-300">
+          <Link to="/#about" className="hover:text-blue-900 duration-300">
             <li>About</li>
           </Link>
-          <Link to="/services" className="hover:text-blue-900 duration-300">
+          <Link to="/#services" className="hover:text-blue-900 duration-300">
             <li>Services</li>
           </Link>
-          <Link to="/contact" className="hover:text-blue-900 duration-300">
+          <Link
+            to="https://wa.me/2348021056648?text="
+            className="hover:text-blue-900 duration-300"
+          >
             <li>Contact Us</li>
           </Link>
         </ul>
@@ -86,19 +89,17 @@ const Header = () => {
           <Link to="/" onClick={() => setIsOpen(false)}>
             <li className="hover:text-blue-900 duration-300">Home</li>
           </Link>
-          <Link to="/about" onClick={() => setIsOpen(false)}>
+          <Link to="/#about" onClick={() => setIsOpen(false)}>
             <li className="hover:text-blue-900 duration-300">About</li>
           </Link>
-          <Link to="/services" onClick={() => setIsOpen(false)}>
+          <Link to="/#services" onClick={() => setIsOpen(false)}>
             <li className="hover:text-blue-900 duration-300">Services</li>
           </Link>
-          <Link to="/services" onClick={() => setIsOpen(false)}>
+          <Link
+            to="https://wa.me/2348021056648?text="
+            onClick={() => setIsOpen(false)}
+          >
             <li className="hover:text-blue-900 duration-300">Contact us</li>
-          </Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)}>
-            <li className="hover:bg-blue-950 hover:text-white hover:px-4 rounded-sm cursor-pointer duration-300">
-              Get Enrolled
-            </li>
           </Link>
         </motion.ul>
       )}

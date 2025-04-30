@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router";
 // react libraries
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -36,12 +37,27 @@ const Home = () => {
     });
   }, []);
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <section className="">
       <HomeBanner />
       <SubBanner />
-      <Experience />
-      <Services />
+      <div id="about">
+        <Experience />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
       <SubFooter />
       <div className="bg-zinc-100 py-16">
         <OurProcess />
