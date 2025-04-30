@@ -30,12 +30,12 @@ import ServiceImageThree from "../assets/Image/car1.jpg";
 import Training from "../assets/Image/training-theory-class.jpg";
 
 const Home = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //     once: true,
+  //   });
+  // }, []);
 
   const location = useLocation();
 
@@ -230,13 +230,13 @@ const Experience = () => {
             <h1 className="text-lg font-medium text-gray-400 my-4">About Us</h1>
           </div>
           <div className="mainheader">
-            <h1 className="font-semibold text-3xl leading-10 capitalize text-blue-950">
+            <h1 className="font-semibold text-2xl md:text-3xl leading-10 capitalize text-blue-950">
               We're an experienced, trustworthy, reliable & friendly driving
               school.
             </h1>
           </div>
           <div className="contents">
-            <p className="text-balance text-[16px] text-gray-600 py-4 leading-7">
+            <p className="text-[14px] md:text-[16px] text-balance text-gray-600 py-4 leading-6 md:leading-7">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
               debitis cum accusantium quibusdam atque tenetur, dolorum voluptate
               corporis consequatur animi veritatis velit, aspernatur quos vel
@@ -299,7 +299,7 @@ const Services = () => {
                 </p>
                 FullKit Educational Driving Course and Services
               </h1>
-              <p className="font-normal leading-7 text-balance text-center my-3 md:my-8">
+              <p className="text-[14px] md:text-[16px] font-normal leading-7 text-balance text-center my-3 md:my-8">
                 Our driving course helps our clients of all ages to acquire
                 licensed the experience required to be pro at driving and
                 navigating through:
@@ -389,7 +389,7 @@ const OurProcess = () => {
               Modern technologies for much easier driving.
             </h1>
             <p
-              className="text-gray-500 leading-7 text-center"
+              className="text-[14px] md:text-[16px] text-gray-500 leading-7 text-center"
               data-aos="fade-up"
             >
               Modern technologies have significantly transformed the way we
@@ -409,7 +409,7 @@ const OurProcess = () => {
           <h1 className="capitalize text-blue-950 text-xl font-bold my-4">
             Learn from experienced teachers
           </h1>
-          <p className="text-gray-600">
+          <p className="text-[14px] md:text-[16px] text-gray-600">
             Learn from experienced teachers and driving mentors. Meet the team
             and experience the very best learning experience.
           </p>
@@ -424,7 +424,7 @@ const OurProcess = () => {
           <h1 className="capitalize text-blue-950 text-xl font-bold my-4">
             Take Driving lessons on a scheduled basis.
           </h1>
-          <p className="text-gray-600">
+          <p className="text-[14px] md:text-[16px] text-gray-600">
             Learn from experienced teachers and driving mentors. Meet the team
             and experience the very best learning experience.
           </p>
@@ -439,7 +439,7 @@ const OurProcess = () => {
           <h1 className="capitalize text-blue-950 text-xl font-bold my-4">
             Get certified and ready to take on the road.
           </h1>
-          <p className="text-gray-600">
+          <p className="text-[14px] md:text-[16px] text-gray-600">
             Learn from experienced teachers and driving mentors. Meet the team
             and experience the very best learning experience.
           </p>
