@@ -11,7 +11,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="relative">
+    <nav className="fixed w-full z-[9999] ">
       {/* Top contact bar */}
       <div className="bg-blue-900 text-white py-4 px-8 flex justify-between items-center cursor-pointer">
         <div className="hidden md:flex items-center gap-12 font-light">
@@ -41,10 +41,10 @@ const Header = () => {
       </div>
 
       {/* Main navigation */}
-      <div className="flex justify-between items-center px-8 border-b shadow-md">
+      <div className="bg-white flex justify-between items-center px-8 shadow-sm">
         <Link to={"/"}>
           <div className="">
-            <img src={Logo} alt="" width={120} height={200} />
+            <img src={Logo} alt="" className="w-20 md:w-24" />
           </div>
         </Link>
 
