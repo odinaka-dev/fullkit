@@ -20,7 +20,6 @@ import { MdDriveEta, MdOutlineSafetyCheck } from "react-icons/md";
 import Icon from "../assets/Icons/drive.avif";
 import { IoCheckmarkSharp } from "react-icons/io5";
 import { CgMail } from "react-icons/cg";
-import { CiLocationArrow1 } from "react-icons/ci";
 
 // images imports
 import OfficeImage from "../assets/Image/office.png";
